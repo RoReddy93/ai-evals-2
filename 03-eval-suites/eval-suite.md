@@ -21,9 +21,9 @@
 
 | Check | Caught | Missed (rows) | False alarms (rows) | My P0 row |
 |---|---|---|---|---|
-| Rule check |  |  |  |  |
-| Safety rule |  |  |  |  |
-| Judge |  |  |  |  |
+| Rule check | 1 of 1 | 0 | None  |  |
+| Safety rule | 0 of 1 | 0  | None  |  |
+| Judge | 1 of 1 | 0  | None  |  |
 
 ## Where the failure was caught
 
