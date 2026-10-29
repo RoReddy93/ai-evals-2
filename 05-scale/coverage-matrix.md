@@ -1,24 +1,26 @@
-# Module 5 · Coverage Matrix · [product]
-
-Paste the markdown from the Module 5 Lab Guide over this file, or upload the downloaded `coverage-matrix.md` in its place, then commit.
+# Module 5 · Coverage Matrix · AI Report Summaries
 
 ## Coverage Row
 
 | Product | Hallucination Rate | Fairness | Latency | UX Trust | Robustness |
 |---|---|---|---|---|---|
+| AI Report Summaries | ✅ Covered | ⚠️ Partial | ✅ Covered | ❌ Gap | ❌ Gap |
 
 ## What Runs Today
 
-_The checks that run on your product today._
+- An LLM judge compares each summary with its source report before every release.
+- Response time is logged, but nobody has set a target.
 
 ## Accepted Gap
 
-_The ❌ you can live with for now, why, and what would make you change your mind._
+**UX Trust.** We accept this gap because a small tone issue in the report shouldn't affect overall quality of the report as long as the content is valid and we don't use overconfident language.
+
+We’ll look again: Awkward wording may be tolerable; overconfident language that removes the source’s caveats can mislead clients despite factually correct statements. Accept cosmetic issues, but check misleading certainty before release.
 
 ## Critical Gap
 
-_The ❌ you'd close first, why, and the check that would close it._
+To address Robustness, we’ll test summaries against a challenge set of long reports, complex tables, conflicting findings, unfamiliar topics, and incomplete inputs. Before every release, automated checks and an LLM judge will assess successful completion, factual accuracy, coverage of key findings, and preservation of caveats. We’ll also review a weekly sample of live summaries and add observed failures to the test set. The PM will own thresholds, Engineering will fix failures, and critical failures will block release.
 
 ## After the Pressure Test
 
-_What the feedback changed, or why you kept your answers._
+How I would address robustness gaps. Made it a bit more complete.
